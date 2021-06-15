@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>218</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>170</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>170</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="128">
+             <red>170</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>170</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>170</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="128">
+             <red>170</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>190</red>
+             <green>190</green>
+             <blue>190</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="Text">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>190</red>
+             <green>190</green>
+             <blue>190</blue>
+            </color>
+           </brush>
+          </colorrole>
+          <colorrole role="PlaceholderText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="128">
+             <red>0</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LEI.BQS GLOBAL DEVICE</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="CPropertyEdit" name="property_edit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="buttonPosition" stdset="0">
+        <enum>PropertyEdit::Bottom</enum>
+       </property>
+       <property name="title" stdset="0">
+        <string>Global Settings</string>
+       </property>
+       <property name="decoration" stdset="0">
+        <enum>PropertyEdit::GroupBox</enum>
+       </property>
+       <property name="sendOnlyUpdatedValues" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="formRowWrapPolicy" stdset="0">
+        <enum>QFormLayout::DontWrapRows</enum>
+       </property>
+       <property name="fields" stdset="0">
+        <string>[{&quot;field&quot;: &quot;acqTriggerDelay&quot;, &quot;type&quot;: 1, &quot;rw&quot;: true, &quot;label&quot;: &quot;Trigger Delay w.r.t. EIX.W10-CT&quot;, &quot;ud&quot;: {&quot;units&quot;: &quot;ms&quot;}}, {&quot;field&quot;: &quot;acqWindowLength&quot;, &quot;type&quot;: 1, &quot;rw&quot;: true, &quot;label&quot;: &quot;Acq Wind Length&quot;, &quot;ud&quot;: {&quot;units&quot;: &quot;ms&quot;}}, {&quot;field&quot;: &quot;spcmSamplingFrequency&quot;, &quot;type&quot;: 5, &quot;rw&quot;: true, &quot;label&quot;: &quot;Sampling Freq&quot;, &quot;ud&quot;: {&quot;options&quot;: [[&quot;_250MHz&quot;, 250000000], [&quot;_125MHz&quot;, 125000000], [&quot;_62_5MHz&quot;, 62500000], [&quot;_31_25MHz&quot;, 31250000], [&quot;_15_63MHz&quot;, 15625000], [&quot;_7_81MHz&quot;, 7812500], [&quot;_3_91MHz&quot;, 3906250], [&quot;_1_95MHz&quot;, 1953125]]}}, {&quot;field&quot;: &quot;enableChannel&quot;, &quot;type&quot;: 3, &quot;rw&quot;: true, &quot;label&quot;: &quot;Enable (L,H,V) Channel&quot;}]</string>
+       </property>
+       <property name="buttons" stdset="0">
+        <set>PropertyEdit::GetButton|PropertyEdit::SetButton</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">LEI.BQS/GlobalSettings</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PropertyEdit</class>
+   <extends>QWidget</extends>
+   <header>accwidgets.property_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>CPropertyEdit</class>
+   <extends>PropertyEdit</extends>
+   <header>comrad.widgets.inputs</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>170</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>170</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="WindowText">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>190</red>
+             <green>190</green>
+             <blue>190</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>LEI.BQS.L LONG. SCHOTTKY</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="CPropertyEdit" name="CPropertyEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="title" stdset="0">
+        <string>FFT and NXCALS Settings</string>
+       </property>
+       <property name="decoration" stdset="0">
+        <enum>PropertyEdit::GroupBox</enum>
+       </property>
+       <property name="sendOnlyUpdatedValues" stdset="0">
+        <bool>false</bool>
+       </property>
+       <property name="formRowWrapPolicy" stdset="0">
+        <enum>QFormLayout::DontWrapRows</enum>
+       </property>
+       <property name="fields" stdset="0">
+        <string>[{&quot;field&quot;: &quot;fftLength&quot;, &quot;type&quot;: 5, &quot;rw&quot;: true, &quot;label&quot;: &quot;FFT Length&quot;, &quot;ud&quot;: {&quot;options&quot;: [[&quot;_4194304&quot;, 4194304], [&quot;_2097152&quot;, 2097152], [&quot;_1048576&quot;, 1048576], [&quot;_524288&quot;, 524288], [&quot;_262144&quot;, 262144], [&quot;_131072&quot;, 131072], [&quot;_65536&quot;, 65536], [&quot;_32768&quot;, 32768], [&quot;_16384&quot;, 16384], [&quot;_8192&quot;, 8192], [&quot;_4096&quot;, 4096], [&quot;_2048&quot;, 2048], [&quot;_1024&quot;, 1024], [&quot;_512&quot;, 512], [&quot;_256&quot;, 256], [&quot;_128&quot;, 128]]}}, {&quot;field&quot;: &quot;numberOfFFTs&quot;, &quot;type&quot;: 1, &quot;rw&quot;: true, &quot;label&quot;: &quot;Num of FFTs&quot;, &quot;ud&quot;: {&quot;min&quot;: 0, &quot;max&quot;: 100}}, {&quot;field&quot;: &quot;spectralZoomCentralHarmonic&quot;, &quot;type&quot;: 1, &quot;rw&quot;: true, &quot;label&quot;: &quot;Central Harmonic&quot;, &quot;ud&quot;: {&quot;min&quot;: 1, &quot;max&quot;: 500}}, {&quot;field&quot;: &quot;spectralZoomHarmonicSpan&quot;, &quot;type&quot;: 5, &quot;rw&quot;: true, &quot;label&quot;: &quot;Harmonic Span&quot;, &quot;ud&quot;: {&quot;options&quot;: [[&quot;_1&quot;, 1], [&quot;_2&quot;, 2], [&quot;_4&quot;, 4], [&quot;_10&quot;, 10], [&quot;_20&quot;, 20]]}}, {&quot;field&quot;: &quot;particleRestMass&quot;, &quot;type&quot;: 2, &quot;rw&quot;: false, &quot;label&quot;: &quot;Ion Rest Mass&quot;, &quot;ud&quot;: {&quot;precision&quot;: 7, &quot;units&quot;: &quot;eV/c^2&quot;}}, {&quot;field&quot;: &quot;relativisticGamma&quot;, &quot;type&quot;: 2, &quot;rw&quot;: false, &quot;label&quot;: &quot;Relativistic Gamma&quot;}, {&quot;field&quot;: &quot;slipFactor&quot;, &quot;type&quot;: 2, &quot;rw&quot;: false, &quot;label&quot;: &quot;Slip Factor&quot;}, {&quot;field&quot;: &quot;notifyLogging&quot;, &quot;type&quot;: 3, &quot;rw&quot;: true, &quot;label&quot;: &quot;Send Data to NXCALS&quot;}]</string>
+       </property>
+       <property name="buttons" stdset="0">
+        <set>PropertyEdit::GetButton|PropertyEdit::SetButton</set>
+       </property>
+       <property name="channel" stdset="0">
+        <string notr="true">LEI.BQS.L/Settings</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PropertyEdit</class>
+   <extends>QWidget</extends>
+   <header>accwidgets.property_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>CPropertyEdit</class>
+   <extends>PropertyEdit</extends>
+   <header>comrad.widgets.inputs</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
