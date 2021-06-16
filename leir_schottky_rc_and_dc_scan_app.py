@@ -117,7 +117,7 @@ class DemoDisplay(CDisplay):
     _set_enable_interrupt_scan_button_debunch = Signal(bool)
 
     def ui_filename(self):
-        return 'app.ui'
+        return 'leir_schottky_rc_and_dc_scan_app.ui'
 
     def define_variable_to_plot(self, plot_variable):
         if plot_variable ==  'Frequency':
